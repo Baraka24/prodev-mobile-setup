@@ -11,9 +11,9 @@ This guide will walk you through creating a new account or logging in on Expo.de
    - Click on the **"Sign Up"** button in the top right corner
 
 2. **Choose Your Sign-Up Method**
-   
+
    You have three options to create an account:
-   
+
    - **GitHub Account**: Click "Continue with GitHub" to sign up using your GitHub credentials
    - **Google Account**: Click "Continue with Google" to sign up using your Google account
    - **Email**: Enter your email address, username, and password to create a standalone account
@@ -34,9 +34,9 @@ This guide will walk you through creating a new account or logging in on Expo.de
    - Click on the **"Log In"** button in the top right corner
 
 2. **Choose Your Login Method**
-   
+
    Select the same method you used to create your account:
-   
+
    - **GitHub**: Click "Continue with GitHub"
    - **Google**: Click "Continue with Google"
    - **Email**: Enter your username/email and password
@@ -84,3 +84,26 @@ After setting up your account, you can:
 - Configure your development environment
 - Deploy your mobile applications
 - Access Expo's build and deployment services
+
+# Steps for scafolding a new Expo project
+- Run command: `npx create-expo-app@latest`, reply the prompt y to continue then give it a name for the app folder
+- Once ✅ Your project is ready!
+
+To run your project, navigate to the directory and run one of the following npm commands.
+
+- cd app-example
+- npm run android
+- npm run ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+- npm run web
+
+## Observations from thereset-project command
+```
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Apache24\htdocs\prodev-mobile-setup\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Apache24\htdocs\prodev-mobile-setup\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\barak\AppData\Local\npm-cache\_logs\2026-01-08T15_58_48_233Z-debug-0.log
+```
