@@ -16,9 +16,10 @@ export default function HomeScreen() {
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
         />
-      }>
+      }
+      style={styles.container}>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Entry Screen - Awesome</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -79,6 +80,9 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -87,6 +91,18 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+  },
+  largeText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  mediumText: {
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  smallText: {
+    fontSize: 14,
+    fontWeight: '400',
   },
   reactLogo: {
     height: 178,
